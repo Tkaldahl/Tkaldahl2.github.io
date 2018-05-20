@@ -1,13 +1,16 @@
 body {
     min-height: 900px;
     min-width: 800px;
+    background: url(./images/Hiking\ Picture.jpg);
+    background-size: cover;
+    
 }
 
 header {
     width: 100%;
     display: grid;
     grid-template: 20% 80% / 10% 80% 10%;
-    border: black;
+    background: whitesmoke;
 }
 
 header h1 {
@@ -20,14 +23,57 @@ header h2 {
     text-align: center;
 }
 header ol {
+    display: grid;
     grid-area: 1 / 3 / 3 / 4;
-    display: block;
     padding: 0%;
+    padding-right: 3px;
+    grid-gap: 10%;
+}
+
+nav {
+    border: solid black;
+    text-align: center;
+    padding: 5%;
+    border-width: 1px;
 }
 
 main {
     display: grid;
     grid-template: 1fr 1fr 1fr / 100%;
     grid-gap: 100px;
+    margin: 100px auto;
+    
 }
 
+content {
+    background: whitesmoke;
+    display: grid;
+    grid-template: 30% 80% / 90% 10%;
+    width: 100%;
+    height: 100%;
+}
+
+content h1 {
+    grid-area: 1 / 1 ;
+    padding: 0px 0px 0px 10px;
+}
+
+content p {
+    grid-area: 2 / 1;
+    padding: 0px 10px;
+}
+
+content aside {
+    grid-area: 1 / 2 / 3 / 3;
+}
+content.block1 {
+    grid-area: 1 / 1;
+}
+
+content.block2 {
+    grid-area: 2 / 1;
+}
+
+content.block3 {
+    grid-area: 3 / 1;
+}
