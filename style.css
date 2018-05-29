@@ -1,8 +1,14 @@
 body {
+
     min-height: 900px;
     width: 100%;
-    background: url(./images/Hiking\ Picture.jpg);
-    background-size: cover;
+    padding: 0;
+    margin: 0;
+    background: url(./images/watercolor\ tree.jpg);
+    background-size: 200px auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right 150px;
 }
 
 header {
@@ -15,11 +21,13 @@ header {
 header h1 {
     grid-area: 1 / 2 / 2 / 3;
     text-align: center;
+    padding: 20px 0 0 0px;
 }
 
 header h2 {
     grid-area: 2 / 2 / 3 / 3;
     text-align: center;
+    margin-top: -5px;
 }
 header ol {
     display: grid;
@@ -37,6 +45,13 @@ nav {
     border-width: 1px;
 }
 
+nav a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
 main {
     display: grid;
     grid-template: 1fr 1fr 1fr / 100%;
